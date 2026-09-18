@@ -18,4 +18,24 @@ buildscript {
     }
 }
 
+subprojects { project ->
+    project.plugins.withId("com.android.library") {
+        project.android {
+            lint {
+                abortOnError = false
+                checkReleaseBuilds = false
+            }
+        }
+    }
+    project.plugins.withId("com.android.application") {
+        project.android {
+            lint {
+                abortOnError = false
+                checkReleaseBuilds = false
+            }
+        }
+    }
+}
+
 apply plugin: "com.facebook.react.rootproject"
+

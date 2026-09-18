@@ -1,4 +1,4 @@
-package com.pomimobile
+package dev.ominira.pomi
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
